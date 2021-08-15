@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  brave:
+    image: herklos/ubuntu-bionic-desktop:1.9.0
+    shm_size: '512m'
+    environment:
+      - VNC_PW=password2
+    ports:
+      - 6901:6901
